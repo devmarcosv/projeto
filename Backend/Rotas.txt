@@ -1,0 +1,69 @@
+- Rotas carros
+
+	/carros
+	/carros/add
+		- Campos
+			{
+				"placa": "ALX1411",
+				"nome_carro" : "CELTA",
+				"cor_carro": "BRANCO",
+				"ano_carro": "2020",
+				"marca_carro":"FIAT",
+				"combustivel_carro": "GASOLINA",
+				"cliente_id": 2
+			}
+	/carros/edit/:id
+			- Campos
+			{
+				"placa": "ALX1411",
+				"nome_carro" : "CELTA",
+				"cor_carro": "BRANCO",
+				"ano_carro": "2020",
+				"marca_carro":"FIAT",
+				"combustivel_carro": "GASOLINA",
+				"cliente_id": 2
+			}
+	/carros/delete/:id
+	/carros/view/:id
+
+- Rotas Clientes
+
+	/clientes
+	/clientes/add
+		- Campos
+		{
+			"nome_cliente":"Marcos",
+			"sexo_cliente":"M",
+			"idade_cliente":"20"
+		}
+	/clientes/edit/:id
+		- Campos
+		{
+			"nome_cliente":"Marcos",
+			"sexo_cliente":"M",
+			"idade_cliente":"20"
+		}
+	/clientes/delete/:id
+	/clientes/view/:id
+
+- Rotas Revisões
+
+	/revicoes
+	/revicoes/add
+		- Campos
+		{
+			"data_revisao": "29/05/2019",
+			"descricao_revisao": "29/05/2019",
+			"valor_revisao" : 100,
+			"carro_id" : 2
+		}
+	/revicoes/edit/:id
+		- Campos
+		{
+			"data_revisao": "29/05/2019",
+			"descricao_revisao": "29/05/2019",
+			"valor_revisao" : 100,
+			"carro_id" : 2
+		}
+	/revicoes/delete/:id
+	/revicoes/view/:id

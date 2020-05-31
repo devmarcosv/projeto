@@ -1,0 +1,43 @@
+Appcontroller.php
+
+public function beforeRender(Event $event)
+    {
+         // Setando extensão .json
+         $this->RequestHandler->renderAs($this, 'json');
+        $this->set('_serialize', true);
+    }
+});
+
+Routes.php
+
+// Criar response em json
+
+Router::prefix('api', function (RouteBuilder $routes) {
+$routes->setExtensions(['json']);
+$routes->fallbacks(DashedRoute::class);
+});
+
+// Iniciar projeto
+
+composer self-update && composer create-project --prefer-dist cakephp/app:^3.8 "\\nome do projeto"
+
+
+// Gerar migrations do banco de dados
+bin/cake bake migration_snapshot Initial
+
+
+// Executar migrations quando não tem o banco de dados criado
+
+bin/cake migrations migrate
+
+// Criar models e entity
+
+bin/cake bake model all
+
+// Criar controller
+
+bin/cake bake controller all
+
+// Subir servidor
+
+bin/cake server
