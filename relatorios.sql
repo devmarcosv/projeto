@@ -3,7 +3,7 @@
 CREATE SCHEMA marcus_vinicius; 
 
 -- Selecionar schema para salvar no postgres
-SET search_path TO marcus_vinicius;
+SET search_path TO marcos_vinicius;
 
 -- Tabelas
 
